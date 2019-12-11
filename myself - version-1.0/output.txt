@@ -1,0 +1,34 @@
+include all$ header
+start main function 
+real variable is declared 0
+complex variable is declared 1
+equal
+number
+value of the variable :10
+nothing
+loop
+number
+number
+loop execute 9 time
+sin
+number
+in sin block sine(20);(20) 
+cos
+number
+in cos block cosine(30);(30) 
+if
+number
+number
+number
+number
+if
+value of expression in if :7
+number
+number
+number
+number
+else
+number
+number
+value of expression in else :11
+end main function 

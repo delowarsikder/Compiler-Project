@@ -1,0 +1,24 @@
+@header all$
+start main
+real a ;
+complex b;
+complex c;
+real m;
+real d;
+b eq 10;
+a eq 6;
+m eq 25;
+c = a sub b;
+;
+loop from 1 to 10 {}
+sine(45);
+cosine(30);
+d = tangent(45);
+show(d);
+log (30);
+energy(2^3);
+check (b > a) b + a;
+check (a < 3) 3 + 4 ; check_end a * 6 ;
+button 0 { press 4 {1  split} press 5 {2 split} }
+
+end main

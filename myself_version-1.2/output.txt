@@ -1,0 +1,16 @@
+include all$ header
+value of variable b = 10 
+value of variable a = 6 
+nothing
+loop execute 9 time
+in sin block sine(45); = 0.000000
+in cos block cosine(30);
+in tan block tangent(45);
+in log block log (30);
+value = 8
+value of expression in if :16
+value of expression in else :36
+auto expresstion2: 3
+auto expression1: 6
+case expression2: 5
+value of state : 4

@@ -1,0 +1,23 @@
+include all$ header
+this variable Already declared 1
+complex variable is declared 1
+this variable Already declared 1
+this variable Already declared
+complex variable is declared 1
+value of variable 10 
+nothing
+loop execute 1 time
+loop execute 2 time
+loop execute 3 time
+loop execute 4 time
+loop execute 5 time
+loop execute 6 time
+loop execute 7 time
+loop execute 8 time
+loop execute 9 time
+in sin block sine(45); = 0
+in cos block cosine(30);
+value of expression in if :7
+value of expression in else :30
+Case execute 
+switch statement execute

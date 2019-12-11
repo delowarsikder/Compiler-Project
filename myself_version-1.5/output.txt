@@ -1,0 +1,19 @@
+include all$ header
+value of variable b = 10
+value of variable a = 6
+value of variable m = 25
+value of a = -4
+nothing
+loop execute 10 time
+in sin block sine(45); = 0.707108
+in cos block cosine(30); = 0.866025
+in tan block tangent(45); = 1.000004
+value of a = 0.000000
+print block a = 0.000000
+in log block log (30); =3.401197
+value = 8
+value of expression in if :10
+value of expression in if :7
+case expression 1 state 5 : 0
+case expression2: 4
+value of state 0 : 0

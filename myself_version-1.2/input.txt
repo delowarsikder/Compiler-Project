@@ -1,0 +1,21 @@
+@header all$
+start main
+real a ;
+complex b;
+
+complex c;
+
+b eq 10;
+a eq 6;
+;
+loop from 1 to 10 {}
+sine(45);
+cosine(30);
+tangent(45);
+log (30);
+energy(2^3);
+check (b > a) b + a;
+check (a < 3) 3 + 4 ; check_end a * 6 ;
+button 4 { press 5 {1  split}  press 6 {2 split}  auto {3 }}
+
+end main
