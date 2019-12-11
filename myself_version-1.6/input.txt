@@ -6,21 +6,21 @@ complex c;
 real d;
 real m;
 b eq 10;
-a eq 6;
+a eq 5;
 p eq 2 ;
 c =  b + a;
 ;
-loop from 1 to 10 {}
+loop from 1 to 10 { 5+6; }
 sine(45);
 cosine(30);
 d = tangent(80);
 show(c);
 energy(2^3);
-show(d);
+show(a);
 log(2);
 show(d);
 check (b > a) b + a;
 check (a < 3) 3 + 4 ; check_end a * 6 ;
-button 2 { press 4 {1  split} press 5 {2 split} }
+button 5 { press 4 { 12+3  split} press 5 {2 split} auto { a+3} }
 
 end main

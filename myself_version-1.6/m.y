@@ -14,7 +14,7 @@
 	int store[52]={0};
 	int state[10]={0};
 	int declared[52]= {0};
-
+	int swvalue=0,check=0;
 %}
 
 
@@ -106,12 +106,12 @@ type:
 	;
 
 loop:
-	LOOP FROM NUM TO NUM '{' body '}'  {
-					printf("loop execute %d time\n",$5-$3+1);
+	LOOP FROM NUM TO NUM '{' expression ';' '}'  {
+					// printf("loop execute %d time\n",$5-$3+1);
 					 int i=0;
-				   for(i=$3;i<$5;i++){
-	  				//  printf("loop execute %d time\n",i);
-	 	  }
+				   for(i=$3;i<=$5;i++){
+	  				//  printf("loop execute %d time = %d\n",i,$7);
+					}
 	}
 	;
 
@@ -153,26 +153,40 @@ equation:
 		;
 
 switch:
-		BUTTON  expression '{' click '}'{
-				state[$2] = $2;
-		printf("switch exprssion %d : %d\n",state[$2],$2);
+		BUTTON  NUM '{'  {
+			swvalue = $2;
+				// state[$2] = $2;
+		printf("switch exprssion value : %d\n",$2);
 	} 
+	| click '}'
 	;
 
-click:
-	PRESS expression '{' stmt SPLIT'}' {	
-		printf("case expression 1 state %d : %d\n",$2,state[$2]);		
+;
+
+click:/*null*/
+		|
+		PRESS NUM '{' expression SPLIT'}' click {
+		if(!check){
+			if(swvalue == $2){
+				printf("case expression : %d value = %d\n",$2,$4);
+				check = 1;
 		}
-		|PRESS expression '{' stmt SPLIT'}' click {
-		printf("case expression2: %d\n",$2);
 		}
-		|PRESS expression '{' stmt SPLIT'}' auto {
-		printf("auto expression with : %d\n",$2);
+		else {
+			//  printf("not match %d\n",$2);
+		 }
 		}
+		|auto 
 		;
 
 auto:
-	AUTO '{' stmt '}'{printf("auto expresstion2: %d\n",$3);}
+	AUTO '{' expression '}'{ 
+		if(!check){
+			   printf("auto expresstion2: %d\n",$3);
+				check = 1;
+		}
+		
+		   }
 		;
 
 function: 

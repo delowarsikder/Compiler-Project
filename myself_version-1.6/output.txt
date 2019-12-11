@@ -1,21 +1,19 @@
 include all$ header
 assign value of variable b = 10.000000
-assign value of variable a = 6.000000
+assign value of variable a = 5.000000
 p variable is not declared
-value of c = 16.000000
+value of c = 15.000000
 nothing
-loop execute 10 time
 in sin block sine(45); = 0.707108
 in cos block cosine(30); = 0.866025
 in tan block tangent(80); = 5.671390
 triangle value of d = 5.671390
-print block c = 16.000000
+print block c = 15.000000
 functional value = 8
-print block d = 5.671390
+print block a = 5.000000
 in log block log(2); =0.693147
 print block d = 5.671390
-value of expression in if :16
-value of expression in else :36
-case expression 1 state 5 : 0
-case expression2: 4
-switch exprssion 2 : 2
+value of expression in if :15
+value of expression in else :30
+switch exprssion value : 5
+auto expresstion2: 8
